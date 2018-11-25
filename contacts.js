@@ -6,22 +6,22 @@ const db = {}
 const defaultData = {
   contacts: [
     {
-      id: 'ryan',
-      name: 'Ryan Florence',
-      email: 'ryan@reacttraining.com',
-      avatarURL: config.origin + '/ryan.jpg'
+      id: 'tent',
+      name: 'Big Agnes Copper Spur HV UL2',
+      weight: '54',
+      avatarURL: config.origin + '/BA-Copper-Spur-HV-UL2.jpg'
     },
     {
-      id: 'michael',
-      name: 'Michael Jackson',
-      email: 'michael@reacttraining.com',
-      avatarURL: config.origin + '/michael.jpg'
+      id: 'sleepingBag',
+      name: 'GoLite Ultra 20',
+      weight: '17',
+      avatarURL: config.origin + '/GoLite-Ultra-20.jpg'
     },
     {
-      id: 'tyler',
-      name: 'Tyler McGinnis',
-      email: 'tyler@reacttraining.com',
-      avatarURL: config.origin + '/tyler.jpg'
+      id: 'backpack',
+      name: 'Hyperlite Mountain Gear Dyneema Summit Bag',
+      weight: '15',
+      avatarURL: config.origin + '/HMG-dyneema-summit-pack.jpg'
     }
   ]
 }

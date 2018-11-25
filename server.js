@@ -12,7 +12,7 @@ app.use(cors())
 app.get('/', (req, res) => {
   const help = `
   <pre>
-    Welcome to the Address Book API!
+    Welcome to the Gear List API!
 
     Use an Authorization header to work with your own data:
 
@@ -51,13 +51,13 @@ app.delete('/contacts/:id', (req, res) => {
 })
 
 app.post('/contacts', bodyParser.json(), (req, res) => {
-  const { name, email } = req.body
+  const { name, weight } = req.body
 
-  if (name && email) {
+  if (name && weight) {
     res.send(contacts.add(req.token, req.body))
   } else {
     res.status(403).send({
-      error: 'Please provide both a name and an email address'
+      error: 'Please provide both a name and a weight'
     })
   }
 })
